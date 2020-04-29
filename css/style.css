@@ -100,10 +100,10 @@ input:focus, button:focus {
   position: relative;
   padding-top: 65px;
   padding-bottom: 60px;
-  background: #373737 url(../img/main/main-bg.png) center no-repeat;
-  background-size: cover;
+  background: #373737;
   color: #ffffff;
-  z-index: 1;
+  z-index: 3;
+  min-width: 5;
   /* затемнение фона на главном экране */
   /* оформление главной картинки */
   /* Заголовок */
@@ -117,7 +117,7 @@ input:focus, button:focus {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 0;
 }
 
@@ -135,6 +135,10 @@ input:focus, button:focus {
   margin-left: -195px;
   border: 1px solid #ffffff;
   border-radius: 50%;
+}
+
+.main-text {
+  z-index: 3;
 }
 
 .main-text__title {
@@ -155,6 +159,7 @@ input:focus, button:focus {
 }
 
 .form {
+  z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,4 +416,77 @@ input:focus, button:focus {
 
 .clients-block__img {
   margin: auto;
+}
+
+.main-slider {
+  overflow: hidden;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.2;
+  height: 104rem;
+  height: 100%;
+  outline: none;
+}
+
+.main-slider-box {
+  min-height: 100%;
+  height: 600px;
+  outline: none;
+}
+
+.main-slider-box:nth-child(1) {
+  background: url(../img/slider/BG_slide_1.png) no-repeat center center;
+  background-size: cover;
+}
+
+.main-slider-box:nth-child(2) {
+  background: url(../img/slider/BG_slider.png) no-repeat center center;
+  background-size: cover;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 15px;
+  background-color: #5a2020;
+  border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+.slider-main {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: none;
+}
+
+.slide-n {
+  background: url(../img/slider/right_arrow.png) no-repeat;
+  right: 1rem;
+  width: 3rem;
+  height: 5rem;
+  z-index: 100;
+}
+
+.slide-p {
+  background: url(../img/slider/left_arrow.png) no-repeat;
+  left: 1rem;
+  width: 3rem;
+  height: 5rem;
+  z-index: 100;
 }
