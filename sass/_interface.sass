@@ -39,3 +39,17 @@
 			color: $text-color-light
 			border: 1px solid transparent
 			cursor: pointer
+.dark-bg
+	position: relative
+	z-index: 2
+	/* затемнение фона на главном экране */
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.8)
+		z-index: -1

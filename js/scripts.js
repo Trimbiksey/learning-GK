@@ -15,34 +15,32 @@ $(document).ready(function () {
 new WOW().init();
 
 
-$('.main-slider').slick({
-  arrows: true,
-  nextArrow: '<button type="button" class="slider-main slide-n"></i></button>',
-  prevArrow: '<button type="button" class="slider-main slide-p">  </i></button>',
-  fade: true,
-  dots: true,
-  speed: 1500,
-  easing: 'ease',
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 400,
-  responsive: [
-    {
-      breakpoint: 870,
-      settings: {
-        arrows: false
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false
 
+$(document).ready(function () {
+  $('.production-slider_top').slick({
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    asNavFor: '.production-slider_bottom'
+  });
+
+  $('.production-slider_bottom').slick({
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
       }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
+    ],
+    // prevArrov: '<div class="slider-arrow slider-arrow_prod slider-arrow_left"></div>',
+    // nextArrow: '<div class="slider-arrow slider-arrow_prod slider-arrow_right"></div>',
+    asNavFor: ".production-slider_top"
+  });
 
 });

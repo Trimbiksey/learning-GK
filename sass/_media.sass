@@ -1,0 +1,71 @@
+@media (max-width: 576px)
+  .hidden-mobile
+    display: none
+  .header
+    &-logo
+      background: $active-color url(../img/header-logo_mobile.png) center no-repeat
+      border-radius: 4px
+      width: 35px
+      height: 35px
+    &-contacts
+      &__phone
+        &s
+          flex-direction: column
+          font-family: 'Bebas Neue Bold', sans-serif
+          font-size: 14px
+          margin-right: 0px
+        &:first-child
+          border-right: none
+      &__button
+        display: inline-block
+        padding: 9px
+        
+  .main
+    text-align: center
+    padding-top: 50px
+
+    &-text
+      &__title
+        font-size: 22px
+        color: $active-color
+      &__subtitle
+        font-size: 18px
+        margin-bottom: 40px
+      &__form
+        background-color: transparent
+        padding: 10px
+  .form
+    display: block
+    &-title
+      padding-right: 0
+      font-size: 15px
+      line-height: 1.4
+    &__input
+      display: block
+      margin-bottom: 13px
+  .numbers
+    &-block
+      display: block
+      width: 100%
+      margin-bottom: 24px
+  .features-blocks
+    flex-direction: column
+  .button
+    padding: 10px 15px
+  .production
+    &-slider_bottom
+      height: auto
+
+    &-text
+      text-align: center
+      &__title
+        padding-left: 0
+        margin-left: 0
+        width: 100%
+  .clients
+    flex-direction: column
+    align-items: center
+
+
+
+
