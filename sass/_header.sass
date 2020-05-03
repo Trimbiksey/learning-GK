@@ -1,11 +1,19 @@
 .header
+	position: fixed
 	padding: 15px 0
+	z-index: 800
+	width: 100vw
+	background-color: $text-color-light
+	opacity: 0.9
+	top: 0px
+	overflow: hidden
 	&-logo
 		background: url(../img/header-logo.png) center no-repeat
 		background-size: 100%
 		width: 191px
 		height: 61px	 
 		padding: 15px 0
+		margin-left: 90px
 	&-contacts
 		display: flex
 		justify-content: flex-end
@@ -19,6 +27,7 @@
 			&:first-child
 				border-right: 1px solid #cfcfd0
 				margin-right: 13px
+				padding-right: 13px
 
 
 // @keyframes move

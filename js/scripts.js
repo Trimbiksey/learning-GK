@@ -44,3 +44,24 @@ $(document).ready(function () {
   });
 
 });
+
+$(document).ready(function () {
+  var menu_link = $('.menu-link');
+  var menu_link_active = $('menu-link_active');
+  var menu = $('.menu');
+  var nav_link = $('.menu a');
+
+  menu_link.click(function () {
+    menu_link.toggleClass('menu-link_active');
+    menu.toggleClass('menu_active')
+  });
+
+  menu_link_active.click(function () {
+    menu_link.removeClass('menu-linc_active');
+  });
+
+  nav_link.click(function () {
+    menu_link.toggleClass('menu-link_active');
+    menu.toggleClass('menu_active');
+  });
+});
