@@ -637,7 +637,7 @@ input:focus, button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: purple;
+  background-color: #c1c1c1;
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -645,7 +645,7 @@ input:focus, button:focus {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   left: -100vw;
-  opacity: 0.95;
+  opacity: 0.99;
 }
 
 .menu_active {
@@ -666,10 +666,10 @@ input:focus, button:focus {
   display: block;
   width: 100%;
   line-height: 4;
-  font-weight: 100;
+  font-weight: 700;
   letter-spacing: 10px;
   text-decoration: none;
-  color: #fff;
+  color: #130c55;
   -webkit-transition: all 0.9s;
   transition: all 0.9s;
 }
@@ -686,10 +686,10 @@ input:focus, button:focus {
   display: block;
   width: 50px;
   height: 50px;
-  background-color: #ffffff;
+  background-color: #efefef;
   border-radius: 50%;
-  -webkit-box-shadow: 5px 1px 20px #4e3bb8cc;
-          box-shadow: 5px 1px 20px #4e3bb8cc;
+  -webkit-box-shadow: 5px 1px 20px #474444;
+          box-shadow: 5px 1px 20px #474444;
   position: fixed;
   top: 20px;
   left: 20px;

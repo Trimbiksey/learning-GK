@@ -2,14 +2,14 @@
   display: flex
   justify-content: center
   align-items: center
-  background-color: purple
+  background-color: darken($bg-color-light, 20)
   position: fixed
   height: 100vh
   width: 100vw
   z-index: 900
   transition: all 0.2s
   left: -100vw
-  opacity: 0.95
+  opacity: 0.99
   &_active
     left: 0
   ul
@@ -22,10 +22,10 @@
       display: block
       width: 100%
       line-height: 4
-      font-weight: 100
+      font-weight: 700
       letter-spacing: 10px
       text-decoration: none
-      color: #fff
+      color: #130c55
       transition: all 0.9s
       &:hover
         transform: translateX(45px)
@@ -42,9 +42,9 @@
     display: block
     width: 50px
     height: 50px
-    background-color: #ffffff
+    background-color: darken($bg-color-light, 2)
     border-radius: 50%
-    box-shadow: 5px 1px 20px #4e3bb8cc
+    box-shadow: 5px 1px 20px #474444
     position: fixed
     top: 20px
     left: 20px
