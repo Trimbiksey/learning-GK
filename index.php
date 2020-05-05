@@ -31,59 +31,10 @@
 
 <body>
 
-	<a class="menu-link " href="#">
-		<span>
-
-		</span>
-	</a>
-
-	<div class="menu">
-		<ul>
-			<li><a href="#main">Главная</a></li>
-			<li><a href="#features">Преимущества</a></li>
-			<li><a href="#products">Продукция</a></li>
-			<li><a href="#production">Производство</a></li>
-			<li><a href="#clients">Наши клиенты</a></li>
-			<li><a href="#map">Карта</a></li>
-		</ul>
-	</div>
-
-	<header class="header">
-
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-3 col-md-4">
-					<div class="header-logo">
-
-					</div>
-					<!-- /.header__logo -->
-				</div>
-				<!-- /.col-4 -->
-				<div class="col-9 col-md-8">
-					<div class="header-contacts">
-						<div class="header-contacts__phones">
-							<div class="header-contacts__phone">
-								8 (347) 271-54-28
-							</div>
-							<div class="header-contacts__phone" alt="phone">
-								8 (937) 363-30-00
-							</div>
-						</div>
-						<button class="header-contacts__button button">
-							<img src="img/icon-phone.png">
-							<span class="hidden-mobile">Заказать звонок</span>
-						</button>
-
-					</div>
-					<!-- /.header__contacts -->
-				</div>
-				<!-- /.col-8 -->
-			</div>
-			<!-- /.row -->
-		</div>
-		<!-- /.container -->
-	</header>
-	<!-- /.header -->
+<?php
+include 'header.php';
+ echo !extension_loaded('openssl')?"Not Available":"Available";
+?>
 
 	<section class="main dark-bg" id="main">
 
@@ -115,8 +66,8 @@
 									Образцы упаковки бесплатно!
 								</span>
 							</div><!-- /.form-title -->
-							<form action="#" class="form">
-								<input class="form__input" type="tel" placeholder="Введите номер телефона">
+							<form action="send.php" method="POST" class="form">
+								<input class="form__input" type="tel" name="phone" placeholder="Введите номер телефона">
 								<button class="button button_big" type="submit">Оставить заявку!</button>
 							</form>
 							<small class="form-small">*Минимальный заказ 500шт</small>
@@ -304,185 +255,16 @@
 	</section>
 	<!-- /.features -->
 
-	<section class="products" id="products">
-		<div class="container">
-			<h2 class="section-title wow fadeInLeft">Наша продукция</h2>
-			<!-- /.section-title -->
-			<div class="row">
-
-
-				<div class="col-12 col-md-6">
-					<div class="products-block">
-						<img class="products-block__img" src="img/products/img-1.png" alt="#">
-						<div class="products-block__title">
-							Гофрокороб 4-х клапанный
-						</div>
-						<!-- /.products-block__title -->
-						<div class="products-block__buttons"><button
-								class="button button-o products-block__button">Подробнее</button><button class="button">Получить
-								расчет</button></div>
-						<!-- /.products-block__buttons -->
-					</div>
-				</div>
-				<!-- /.col-6 -->
-
-
-				<div class="col-12 col-md-6">
-					<div class="products-block">
-						<img class="products-block__img" src="img/products/img-2.png" alt="#">
-						<div class="products-block__title">
-							Гофролоток
-						</div>
-						<!-- /.products-block__title -->
-						<div class="products-block__buttons"><button
-								class="button button-o products-block__button">Подробнее</button><button class="button">Получить
-								расчет</button></div>
-						<!-- /.products-block__buttons -->
-					</div>
-				</div>
-				<!-- /.col-6 -->
-			</div>
-			<!-- /.row -->
-			<div class="row">
-
-
-				<div class="col-12 col-md-6">
-					<div class="products-block">
-						<img class="products-block__img" src="img/products/img-4.png" alt="#">
-						<div class="products-block__title">
-							Гофрокороб самосборный (сложная высечка)
-						</div>
-						<!-- /.products-block__title -->
-						<div class="products-block__buttons"><button
-								class="button button-o products-block__button">Подробнее</button><button class="button">Получить
-								расчет</button></div>
-						<!-- /.products-block__buttons -->
-					</div>
-				</div>
-				<!-- /.col-6 -->
-
-
-				<div class="col-12 col-md-6">
-					<div class="products-block">
-						<img class="products-block__img" src="img/products/img-3.png" alt="#">
-						<div class="products-block__title">
-							Листовой гофрокартон
-						</div>
-						<!-- /.products-block__title -->
-						<div class="products-block__buttons"><button
-								class="button button-o products-block__button">Подробнее</button><button class="button">Получить
-								расчет</button>
-						</div>
-						<!-- /.products-block__buttons -->
-					</div>
-				</div>
-				<!-- /.col-6 -->
-			</div>
-			<!-- /.row -->
-		</div>
-		<!-- /.container -->
-	</section>
-	<!-- /.products -->
-
-
-	<section class="offer dark-bg">
-		<div class="container">
-			<h2 class="offer-title">
-				Получите индивидуальное предложение
-				<span class="offer-title_small">на производство и поставку изделий</span>
-			</h2>
-			<div class="offer-form">
-				<form action="#">
-					<label class="offer-form__label" for="">Введите ваш номер телефона:</label>
-					<input class="form__input offer-form__input" type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
-					<button class="button offer-form__button" type="submit">Оставить заявку!</button>
-				</form>
-				<small class="form-small">*Минимальный заказ 500шт</small>
-			</div>
-		</div>
-	</section>
 
 
 
-	<section class="prodution" id="production">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-7 order-last order-md-first">
-					<div class="production-slider_top hidden-mobile">
-						<img src="img/production/big/howwework__img1-big.jpg" alt="">
-						<img src="img/production/big/howwework__img2-big.jpg" alt="">
-						<img src="img/production/big/howwework__img3-big.jpg" alt="">
-						<img src="img/production/big/howwework__img4-big.jpg" alt="">
-						<img src="img/production/big/howwework__img5-big.jpg" alt="">
-						<img src="img/production/big/howwework__img6-big.jpg" alt="">
-					</div>
-					<div class="production-slider_bottom  wow fadeInLeft">
-						<img src="img/production/big/howwework__img1-big.jpg" alt="">
-						<img src="img/production/big/howwework__img2-big.jpg" alt="">
-						<img src="img/production/big/howwework__img3-big.jpg" alt="">
-						<img src="img/production/big/howwework__img4-big.jpg" alt="">
-						<img src="img/production/big/howwework__img5-big.jpg" alt="">
-						<img src="img/production/big/howwework__img6-big.jpg" alt="">
-					</div>
-				</div>
-				<div class="col-12 col-md-5 order-first order-md-last">
-					<div class="production-text">
-						<div class="production-text__title">Производство
-
-						</div>
-						<div class="production-text__descr">Современное оборудование позволяет произ- водить до 5 миллионов
-							квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам
-							заказчика.<br>
-							Досконально прорабатываем конструкции коро- бов и составы сырья, учитывая условия хранения,
-							транспортировки и производства вашей продукции.
-							Возможно нанесение цветной флексопечати на поверхность коробов.
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="clients" id="clients">
-		<div class="container">
-			<h2 class="section-title wow fadeInLeft">
-				Наши клиенты
-			</h2>
-			<!-- /.section-title -->
-			<div class="clients">
-				<div class="clients-block"><img src="img/clients/client-1.png" alt="#" class="clients-block__img"></div>
-				<!-- /.clients-block -->
-				<div class="clients-block"><img src="img/clients/client-2.png" alt="#" class="clients-block__img"></div>
-				<!-- /.clients-block -->
-				<div class="clients-block"><img src="img/clients/client-3.png" alt="#" class="clients-block__img"></div>
-				<!-- /.clients-block -->
-				<div class="clients-block"><img src="img/clients/client-4.png" alt="#" class="clients-block__img"></div>
-				<!-- /.clients-block -->
-				<div class="clients-block"><img src="img/clients/client-5.png" alt="#" class="clients-block__img"></div>
-				<!-- /.clients-block -->
-				<div class="clients-block"><img src="img/clients/client-6.png" alt="#" class="clients-block__img"></div>
-				<!-- /.clients-block -->
-				<div class="clients-block"><img src="img/clients/client-7.png" alt="#" class="clients-block__img"></div>
-				<!-- /.clients-block -->
-				<div class="clients-block"><img src="img/clients/client-8.png" alt="#" class="clients-block__img"></div>
-				<!-- /.clients-block -->
-				<div class="clients-block"><img src="img/clients/client-9.png" alt="#" class="clients-block__img"></div>
-				<!-- /.clients-block -->
-				<div class="clients-block"><img src="img/clients/client-10.png" alt="#" class="clients-block__img"></div>
-				<!-- /.clients-block -->
-				<div class="clients-block"><img src="img/clients/client-11.png" alt="#" class="clients-block__img"></div>
-				<!-- /.clients-block -->
-				<div class="clients-block"><img src="img/clients/client-12.png" alt="#" class="clients-block__img"></div>
-				<!-- /.clients-block -->
-			</div>
-			<!-- /.clients -->
-		</div>
-		<!-- /.container -->
-	</section>
-	<!-- /.clients -->
 
 
+
+
+<?php
+include 'footer.php'
+?>
 
 	<div class="overlay">
 		<div class="popup">

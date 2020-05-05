@@ -396,6 +396,7 @@ input:focus, button:focus {
 .products {
   padding-top: 57px;
   padding-bottom: 73px;
+  margin-top: 90px;
 }
 
 .products-block {
@@ -426,6 +427,7 @@ input:focus, button:focus {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 90px;
 }
 
 .clients-block {
@@ -488,6 +490,7 @@ input:focus, button:focus {
 .production {
   padding-top: 87px;
   padding-bottom: 90px;
+  margin-top: 90px;
 }
 
 .production-slider {
@@ -735,4 +738,31 @@ input:focus, button:focus {
   -webkit-transform: rotate(-675deg);
           transform: rotate(-675deg);
   margin-top: 0;
+}
+
+.contacts {
+  position: relative;
+}
+
+.contacts-block {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  background-color: #fff;
+  padding-top: 33px;
+  padding-bottom: 39px;
+  padding-left: 60px;
+  padding-right: 34px;
+}
+
+.contacts-block__title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.contacts-block__text {
+  margin-bottom: 30px;
 }
